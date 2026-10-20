@@ -1,0 +1,366 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(to bottom, #3e3f50, #101213);
+    color: #ffffff;
+
+    /* Evita rolagem horizontal */
+    overflow-x: hidden;
+}
+
+.link {
+
+    color: #93e0ff;
+
+}
+
+
+/* ==============================
+   CABEÇALHO
+================================= */
+
+header {
+    background: linear-gradient(
+        to bottom,
+        hsla(202, 24%, 56%, 0.596),
+        #1d1a2ebd
+    );
+
+    color: white;
+    text-align: center;
+
+    padding: 25px;
+
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.349);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   CONTEÚDO PRINCIPAL
+================================= */
+
+main {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+}
+
+
+/* ==============================
+   SEÇÕES
+================================= */
+
+.section {
+    background: linear-gradient(
+        to bottom,
+        hsla(202, 24%, 56%, 0.596),
+        #1d1a2ebd
+    );
+
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.349);
+
+    /* Evita que conteúdo ultrapasse a seção */
+    overflow-wrap: break-word;
+}
+
+.section2 {
+    background: transparent;
+}
+
+
+/* ==============================
+   TÍTULOS
+================================= */
+
+h2 {
+    color: #ffffff;
+
+    border-bottom: 1px solid #cccccc;
+
+    padding-bottom: 8px;
+
+    font-size: 28px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 21px;
+}
+
+
+/* ==============================
+   TEXTOS
+================================= */
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   LINKS
+================================= */
+
+a {
+    color: #155a91;
+
+    /* Permite que URLs grandes quebrem */
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* ==============================
+   IMAGENS
+================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* ==============================
+   QUADRADO DO ELEMENTO QUÍMICO
+================================= */
+
+.elemento {
+    width: 130px;
+    height: 130px;
+
+    margin: 25px auto;
+
+    background-color: #cccccc;
+
+    border: 3px solid #555555;
+    border-radius: 8px;
+
+    color: #222222;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento span {
+    font-size: 16px;
+}
+
+.elemento strong {
+    font-size: 45px;
+}
+
+.elemento small {
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RODAPÉ
+================================= */
+
+footer {
+    background: linear-gradient(
+        to bottom,
+        hsla(202, 24%, 56%, 0.596),
+        #1d1a2ebd
+    );
+    
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ==============================
+   TABLETS
+================================= */
+
+@media (max-width: 900px) {
+
+    main {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* ==============================
+   CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    main {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    .section {
+        padding: 18px 15px;
+        margin-bottom: 15px;
+
+        border-radius: 7px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .elemento {
+        width: 115px;
+        height: 115px;
+
+        margin: 20px auto;
+    }
+
+    .elemento strong {
+        font-size: 40px;
+    }
+
+    .elemento span {
+        font-size: 14px;
+    }
+
+    .elemento small {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 18px 12px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+
+/* ==============================
+   CELULARES MUITO PEQUENOS
+================================= */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        width: 96%;
+    }
+
+    .section {
+        padding: 15px 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .elemento {
+        width: 105px;
+        height: 105px;
+    }
+
+    .elemento strong {
+        font-size: 36px;
+    }
+}
